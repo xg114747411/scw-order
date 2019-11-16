@@ -12,5 +12,8 @@ public class ScwOrderApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ScwOrderApplication.class, args);
 	}
-
+	
+	public void test2() {
+		
+	}
 }
