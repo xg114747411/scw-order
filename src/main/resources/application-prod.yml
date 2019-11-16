@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: scw-order
+  datasource:   #数据库连接池
+    url: jdbc:mysql://101.132.138.187:3306/atcrowdfunding
+    username: root
+    password: '123456'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+#redis配置  
+  redis:
+    host: 101.132.138.187
+    port: 6399
+mybatis:
+  config-location: classpath:/mybatis/mybatis-config.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+server:
+  port: 9000
+  
+eureka:
+  instance:
+    ip-address: 47.101.184.221  # 当前应用所在的服务器的ip
+    prefer-ip-address: true  # 支持注册中心使用ip-address[以后分布式发布时保证注册中心可以管理所有项目]
+  client:
+    service-url:   # 注册中心
+      defaultZone: http://47.101.185.44:8761/eureka/
+    
