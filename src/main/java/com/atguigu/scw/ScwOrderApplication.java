@@ -18,5 +18,5 @@ public class ScwOrderApplication {
 	}
 	
 	public void test(){}
-	
+	public void test3(){}
 }
